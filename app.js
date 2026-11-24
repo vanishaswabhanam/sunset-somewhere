@@ -119,7 +119,11 @@
       events: {
         onReady: () => { ready = true; player.mute(); if (queue.length) play(at); },
         onStateChange: e => {
-          if (e.data === YT.PlayerState.PLAYING) { clearTimeout(loadTimer); setTap(false); feed.classList.add("playing"); $("sound").hidden = false; }
+          if (e.data === YT.PlayerState.PLAYING) {
+            clearTimeout(loadTimer); setTap(false);
+            // wait out YouTube's play-icon flash before fading the picture in
+            setTimeout(() => { if (player.getPlayerState() === YT.PlayerState.PLAYING) { feed.classList.add("playing"); $("sound").hidden = false; } }, 3000);
+          }
           if (e.data === YT.PlayerState.ENDED) skip();
         },
         onError: () => skip(),
