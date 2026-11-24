@@ -1,0 +1,44 @@
+name: Refresh cams
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # every hour: drop streams that went offline
+    - cron: "41 4 * * *"   # once a day: search for new cams where a place is short
+  workflow_dispatch:
+    inputs:
+      discover:
+        description: "Also search for new cams"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-cams
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Refresh data/cams.json
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          if [ -z "$YOUTUBE_API_KEY" ]; then echo "::warning::Add a YOUTUBE_API_KEY repository secret to keep the cam list fresh."; exit 0; fi
+          if [ "${{ github.event.schedule }}" = "41 4 * * *" ] || [ "${{ inputs.discover }}" = "true" ]; then
+            node scripts/refresh.mjs --discover
+          else
+            node scripts/refresh.mjs
+          fi
+      - name: Commit if changed
+        run: |
+          git config user.name "sunset-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/cams.json
+          if ! git diff --cached --quiet; then git commit -m "Refresh live cams" && git push; fi
