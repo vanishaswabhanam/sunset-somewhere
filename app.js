@@ -51,7 +51,7 @@
     at = (i + queue.length) % queue.length;
     feed.classList.remove("playing");
     setTap(false);
-    $("status").textContent = "tuning in";
+    $("status").textContent = "";
     show();
     if (!ready) return;
     player.loadVideoById(queue[at].cam.id);
@@ -102,7 +102,7 @@
   $("next").addEventListener("click", nextPlace);
   feed.addEventListener("click", () => {
     if (!ready || feed.classList.contains("playing")) return;
-    $("status").textContent = "tuning in";
+    $("status").textContent = "";
     player.playVideo();
     clearTimeout(loadTimer);
     loadTimer = setTimeout(stalled, LOAD_TIMEOUT);
@@ -131,7 +131,7 @@
             }, REVEAL_DELAY);
           } else {
             feed.classList.remove("playing");
-            if (e.data === YT.PlayerState.BUFFERING || e.data === YT.PlayerState.PAUSED) $("status").textContent = "tuning in";
+            if (e.data === YT.PlayerState.BUFFERING || e.data === YT.PlayerState.PAUSED) $("status").textContent = "";
           }
           if (e.data === YT.PlayerState.ENDED) skip();
         },
