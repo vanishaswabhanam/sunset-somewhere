@@ -20,17 +20,16 @@ body {
 
 .feed { position: relative; width: 100%; aspect-ratio: 16 / 9; background: var(--feed); overflow: hidden; }
 .player, .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-/* The picture is only shown during steady playback (see app.js), which is when
-   YouTube draws none of its own controls. pointer-events: none stops hover controls. */
-.player { pointer-events: none; opacity: 0; transition: opacity .8s ease; }
-.feed.playing .player { opacity: 1; }
+/* Two stacked players: the next stream loads hidden and crossfades in once it is playing
+   cleanly (see app.js). pointer-events: none keeps YouTube's hover controls away. */
+.player { pointer-events: none; opacity: 0; transition: opacity 1.2s ease; }
+.player.on { opacity: 1; z-index: 1; }
 
-.rec, .stamp, .status, .sound { position: absolute; font: 400 12px/1 var(--f-mono); color: var(--over); text-shadow: 0 1px 2px rgba(0,0,0,.7), 0 0 10px rgba(0,0,0,.45); }
+.rec, .stamp, .status, .sound { position: absolute; z-index: 2; font: 400 12px/1 var(--f-mono); color: var(--over); text-shadow: 0 1px 2px rgba(0,0,0,.7), 0 0 10px rgba(0,0,0,.45); }
 .rec { top: 18px; left: 20px; display: flex; align-items: center; gap: 8px; letter-spacing: .14em; }
 .rec i { width: 9px; height: 9px; border-radius: 50%; background: var(--rec); animation: blink 1.4s steps(1) infinite; }
 .stamp { top: 18px; right: 20px; letter-spacing: .08em; font-variant-numeric: tabular-nums; opacity: .8; }
 .status { left: 0; right: 0; top: 50%; margin: 0; text-align: center; letter-spacing: .14em; opacity: .5; transform: translateY(-50%); }
-.feed.playing .status { display: none; }
 .feed.tap { cursor: pointer; }
 .feed.tap .status { opacity: .85; }
 .feed.blocked .status { pointer-events: auto; opacity: .75; padding-inline: 24px; line-height: 1.6; }
