@@ -1,0 +1,729 @@
+{
+ "updated": "2026-11-24T04:50:37.131Z",
+ "cams": {
+  "Venice": [
+   {
+    "id": "a1mcaV3Sf9U",
+    "title": "🔴 LIVE 24/7  Rolling Cam Venice - Live Cam in Venice Italy - Livecam en direct #venice",
+    "channel": "I Love You Venice"
+   },
+   {
+    "id": "mt7uE-n0YPI",
+    "title": "🔴 4K Live Cam of Ponte delle Guglie Venice - View from Hotel Leone Venezia  - Live stream ライブカメラ",
+    "channel": "I Love You Venice"
+   },
+   {
+    "id": "GQbUdGhHw_o",
+    "title": "🔴 4K View of the Ponte delle Guglie and Strada Nova - Live Stream from Hotel Marte Venice",
+    "channel": "I Love You Venice"
+   }
+  ],
+  "Lisbon": [
+   {
+    "id": "H0afQyFf4R4",
+    "title": "🔴 LIVE 24/7 Lisbon Airport Live Cam 23.11.2026 • Plane Spotting • Direto Aeroporto Lisboa Ao Vivo",
+    "channel": "AVIAÇÃO TV"
+   }
+  ],
+  "Nazaré": [
+   {
+    "id": "_Gi8UC_HPKM",
+    "title": "LIVE Nazaré Big Waves Camera powered by Explore.org",
+    "channel": "Explore Big Surf, Beaches and Sunsets"
+   }
+  ],
+  "Sant Antoni": [
+   {
+    "id": "f6tsHCx4-3g",
+    "title": "Ibiza live from the Hotel Gran Sol",
+    "channel": "Hotel Gran Sol Ibiza ( Official )"
+   },
+   {
+    "id": "-mkakxbwpy0",
+    "title": "LIVE: Ibiza Golden Hour | Club del Mar Deep House Mix 2026 | Lounge Chillout Mix",
+    "channel": "RITUALS DEEP MUSIC"
+   },
+   {
+    "id": "whZHMbZqRFk",
+    "title": "Ibiza Chill Mix 2026 • 24/7 4K Live Stream | Summer Vibes, Chillout House | House Mix by Lilly Era",
+    "channel": "Lilly Era"
+   }
+  ],
+  "Playa de las Américas": [
+   {
+    "id": "yrx0fvj-4QI",
+    "title": "LIVE 🔴 WEBCAM from TENERIFE AIRPORT - (Canary Islands, Spain)",
+    "channel": "LanzaroteWebcam"
+   },
+   {
+    "id": "bZah1iB1xeI",
+    "title": "​🌋 24/7 Teide Volcano Live Monitoring | Tenerife 2026",
+    "channel": "FiBro"
+   }
+  ],
+  "Maspalomas": [
+   {
+    "id": "Ea48y09PuNc",
+    "title": "GranCanaria.live | MiniGolf.com | Yumbo Center - Playa del Inglés - Gran Canaria. (4K)",
+    "channel": "Gran Canaria Live"
+   },
+   {
+    "id": "2u8W916MO4A",
+    "title": "Live Cam Gran Canaria - Maspalomas, Meloneras, Arinaga, Faro2 und Berge",
+    "channel": "Harry Hurtig"
+   },
+   {
+    "id": "o09siXxJw9A",
+    "title": "GranCanaria.live | MiniGolf.com | Atlantico - Irish Center - Playa de Inglés - Gran Canaria. (4K)",
+    "channel": "Gran Canaria Live"
+   }
+  ],
+  "Funchal": [
+   {
+    "id": "pl2bOOZe5S4",
+    "title": "🔴 LIVE: Funchal Marina Webcam 1 Madeira Island | Madeira-Web",
+    "channel": "Madeira-Web"
+   },
+   {
+    "id": "GoCh3Rw2fH4",
+    "title": "🔴 Madeira Island Live Rolling Multi-cam  Streaming 24/7  –  13 cams and local weather",
+    "channel": "Webcamtaxi"
+   },
+   {
+    "id": "sf8BtlhCHo4",
+    "title": "🔴 LIVE: Funchal Marina Webcam 2 Madeira Island | Madeira-Web",
+    "channel": "Madeira-Web"
+   }
+  ],
+  "Ponta Delgada": [
+   {
+    "id": "B46xue6aLCQ",
+    "title": "Azores Live · Terceira Coastline & Weather · Açores em Direto 🌊",
+    "channel": "Terceira Live"
+   },
+   {
+    "id": "BuL1tgahkXM",
+    "title": "Webcam Live @ Ponta do Sol - Madeira / Portal Netmadeira",
+    "channel": "Portal Netmadeira"
+   }
+  ],
+  "Reykjavík": [
+   {
+    "id": "exshoGpNXZk",
+    "title": "Live Aurora from Reykjavík Iceland",
+    "channel": "Aurora Reykjavík The Northern Lights Center"
+   }
+  ],
+  "Brighton": [
+   {
+    "id": "Q-11wZK8b9w",
+    "title": "Brighton Beach Webcam",
+    "channel": "CIBBOWS"
+   },
+   {
+    "id": "ucvBfwIaP84",
+    "title": "Brighton Marina 24x7 Live Stream - Life At The Marina",
+    "channel": "Suite Natured"
+   }
+  ],
+  "Amsterdam": [
+   {
+    "id": "Gd9d4q6WvUY",
+    "title": "Now4Rent.NL | Amsterdam De Dam | Pan Tilt Zoom Camera | Ultra HD (4K)",
+    "channel": "Now4Rent"
+   },
+   {
+    "id": "FHJH2yMe6Hw",
+    "title": "Station Amsterdam Centraal - De Vijf Bruggen, camera 2 | Livestream ProRail",
+    "channel": "ProRail"
+   },
+   {
+    "id": "43qH0tDA6lM",
+    "title": "WebCam.NL | damrakbeursplein.amsterdam | live ultraHD PTZ camera Beurs van Berlage, Amsterdam.",
+    "channel": "WebCam NL"
+   }
+  ],
+  "Prague": [
+   {
+    "id": "kvYMIaXclIE",
+    "title": "Creative Live streaming from Prague (Czech Republic) by CamStreamer",
+    "channel": "CamStreamer"
+   },
+   {
+    "id": "tmlE1ct0cYk",
+    "title": "🔴 4K LIVE: Trainspotting on Prague Main Station | 24/7 LIVE",
+    "channel": "SlowTV"
+   },
+   {
+    "id": "Deo_lcwn8lk",
+    "title": "🔴 LIVE: Planespotting at Prague Vaclav Havel Airport, Prague | 24/7 LIVE",
+    "channel": "SlowTV"
+   }
+  ],
+  "Moscow": [
+   {
+    "id": "nMES3QZHjGc",
+    "title": "Moscow 4K Live: The Ultimate 24/7 Study & Chill Stream",
+    "channel": "Rooftop music 4k and Livecam"
+   },
+   {
+    "id": "VhGdKCs5KIA",
+    "title": "🕹 LIVE CAMERA Russia Saint Petersburg interactive PTZ control real sound Moscow time online",
+    "channel": "Mobotix Webcams Russia | Marathon to 100k"
+   }
+  ],
+  "Jerusalem": [
+   {
+    "id": "77akujLn4k8",
+    "title": "EarthCam Live: Western Wall  (Jerusalem, Israel)",
+    "channel": "EarthCam"
+   },
+   {
+    "id": "zpHmA4YS5UM",
+    "title": "24/7 live from Jerusalem, Israel, Watching & Waiting for Messiah Yeshua Jesus Christ to Return!",
+    "channel": "Celeste Blow  Global Salvation Outreach "
+   }
+  ],
+  "Cape Town": [
+   {
+    "id": "jOqASqt3vVI",
+    "title": "Table Mountain Live Stream | Cape Town Webcam | South Africa",
+    "channel": "Table Mountain Live Stream"
+   },
+   {
+    "id": "Sn6mJgE-JsQ",
+    "title": "Cape Town Live Stream 24/7 | Table Mountain, Lion's Head & Harbour Live Cam",
+    "channel": "FLOORING․CO․ZA"
+   }
+  ],
+  "Seychelles": [
+   {
+    "id": "xA7txncoo6o",
+    "title": "Ocean Sunset NO ADS (Live 24/7). Tropical Beach & Ocean Sounds. Félicité Island, Seychelles",
+    "channel": "Luxury Island"
+   }
+  ],
+  "Malé": [
+   {
+    "id": "_BMi3usEwi8",
+    "title": "Ocean Ambience 4K (LIVE 24/7). Tropical Beach & Ocean Waves Sounds. Maldives InterContinental",
+    "channel": "Luxury Island"
+   },
+   {
+    "id": "h9ba5qkpNA4",
+    "title": "Ocean Ambience LIVE 24/7 🏝 Tropical Beach & Ocean Waves Sounds. VELAA Maldives",
+    "channel": "Luxury Maldives"
+   }
+  ],
+  "Marine Drive": [
+   {
+    "id": "t1WZK_XfcGQ",
+    "title": "Navi Mumbai International Airport (NMI) (NMI) | Live Arrivals & Departures | @LiveAirways_IN1",
+    "channel": "Live Airways India 1"
+   }
+  ],
+  "Kathmandu": [
+   {
+    "id": "S6yb0R1nU60",
+    "title": "KATHMANDU LIVE CAM 🇳🇵 | NEPAL'S CAPITAL CITY LIVE | WEBCAM NEPAL",
+    "channel": "WEBCAM NEPAL CITIES & TOWNS"
+   }
+  ],
+  "Bangkok": [
+   {
+    "id": "UemFRPrl1hk",
+    "title": "🔴 El Gaucho | Soi 11 | Sukhumvit Road | Bangkok | Thailand | Live Street Webcam | 2160p 4K",
+    "channel": "The Real Samui Webcam"
+   },
+   {
+    "id": "OkQ0utdxwBY",
+    "title": "Live Bangkok tour 🔴 Walking tour Bangkok Hot places ❤️‍🔥 Night walks in Thailand 방콕 태국 여행 TV タイライブ",
+    "channel": "Watchers Club"
+   },
+   {
+    "id": "Q71sLS8h9a4",
+    "title": "🔴 El Gaucho | Soi 19 | Sukhumvit Road | Bangkok | Thailand | Live Street Webcam | 2160p 4K",
+    "channel": "The Real Samui Webcam"
+   }
+  ],
+  "Patong": [
+   {
+    "id": "_nvG0c9keWI",
+    "title": "Sainamyen Road, Patong, Phuket, Thailand | Nida Massage | Live Camera Stream",
+    "channel": "Randomly Entertained"
+   },
+   {
+    "id": "uEkJjuAjWa0",
+    "title": "Nanai Road, Patong, Phuket, Thailand | Landmark Bar | Live Camera Stream",
+    "channel": "Randomly Entertained"
+   }
+  ],
+  "Ho Chi Minh City": [
+   {
+    "id": "ebVIUrCokO0",
+    "title": "LIVE Vietnam Tour 🇻🇳 HANOI & HO CHI MINH Walking Tour | Beautiful Memories | 추억의 베트남 여행 라이브",
+    "channel": "Watchers Club"
+   }
+  ],
+  "Singapore": [
+   {
+    "id": "rQ3VvxadJeo",
+    "title": "【LIVE CAMERA】Downtown Singapore　シンガポール　ライブカメラ",
+    "channel": "SingReef"
+   },
+   {
+    "id": "SxzLPHGBkIc",
+    "title": "Live: RailCam Singapore (SMRT)",
+    "channel": "RailCam Singapore"
+   },
+   {
+    "id": "uDdGLd5ML8s",
+    "title": "【LIVE CAMERA】Downtown Singapore Coastal View",
+    "channel": "SingReef"
+   }
+  ],
+  "Kuta": [
+   {
+    "id": "L1duJDAqbJY",
+    "title": "Bali Weather Live Webcam | Wide 4K Panorama from Bukit Jimbaran",
+    "channel": "Bali Weather Live Stream"
+   }
+  ],
+  "Hong Kong": [
+   {
+    "id": "Z8NTLkEFZjg",
+    "title": "🔴TST | LIVE HONG KONG | 陪您休閒上班看風景 LIVE | 減壓音樂🎧 |香港實時",
+    "channel": "Brainrolling Workshop"
+   },
+   {
+    "id": "XN-ArdUrqtc",
+    "title": "【香港直播】實時東九龍維港 hk live camera , hong kong live stream, Country & Folk bgm, 輕鬆音樂",
+    "channel": "Marcus Wong"
+   },
+   {
+    "id": "ygC5wni2DMQ",
+    "title": "🔴【LIVE】Hong Kong Int'l Airport (VHHH/HKG)  ATC Tracking｜香港國際機場｜即時航班動態＆塔台通訊",
+    "channel": "TWSkyWave 空中電波"
+   }
+  ],
+  "Taipei": [
+   {
+    "id": "z_fY1pj1VBw",
+    "title": "【Taipei 4k Live Cam】Overlooking Taipei at the top of Xiangshan｜Taipei 101 | Taiwan | Taipei Webcam",
+    "channel": "Taipei Travel Live Cam  台北觀光即時影像 "
+   },
+   {
+    "id": "Ndo_8RuefH4",
+    "title": "【Taipei 4k Live Cam】Taipei Dadaocheng Wharf | Taipei 101 | Taiwan | Taipei Webcam",
+    "channel": "Taipei Travel Live Cam  台北觀光即時影像 "
+   },
+   {
+    "id": "uvwfYzwY8tg",
+    "title": "【Taipei 4k Live Cam】Bishan Temple | Taipei City View | Taipei 101 | Taiwan | Taipei Webcam",
+    "channel": "Taipei Travel Live Cam  台北觀光即時影像 "
+   }
+  ],
+  "Seoul": [
+   {
+    "id": "RVvYQghFCXk",
+    "title": "[4K] Seoul Korea 24/7 한강 라이브캠 Hangang Live Cam 韓国 ソウル ライブカメラ (since 2020)",
+    "channel": "데일리서울 한강 라이브캠"
+   },
+   {
+    "id": "536M1XZGzIs",
+    "title": "서울실시간 광화문대로 Live Cam I \"Gwanghwamun Boulevard\" , Seoul, Korea I 서울광화문 광화문광장 서울여행 서울라이브",
+    "channel": "GiGAeyesliveTV City View"
+   },
+   {
+    "id": "5gVrWGRZo9s",
+    "title": "🔴 Seoul 4K LIVE | Han River | 서울 한강 라이브 | ソウル漢江ライブ | 首尔汉江直播",
+    "channel": "한강 라이브 365"
+   }
+  ],
+  "Shibuya": [
+   {
+    "id": "dfVK7ld38Ys",
+    "title": "【ライブ】いまの渋谷・スクランブル交差点　ライブカメラ　Shibuya Scramble Crossing - Tokyo, Japan　 Live Cam",
+    "channel": "FNNプライムオンライン"
+   },
+   {
+    "id": "5B4LmH4JbnY",
+    "title": "【ライブ】渋谷スクランブル交差点 / Shibuya Scramble Crossing Live Camera【LIVE】ANN/テレ朝",
+    "channel": "ANNnewsCH"
+   }
+  ],
+  "Lake Kawaguchi": [
+   {
+    "id": "bdUbACCWmoY",
+    "title": "【LIVE】河口湖大石公園からの「富士山ライブカメラ」 \"mount fuji live camera\" from Lake Kawaguchiko Oishi Park  (Japan)",
+    "channel": "【KTV】ケーブルテレビ河口湖"
+   },
+   {
+    "id": "1Lri-i1mVYI",
+    "title": "富士山ライブカメラ/河口湖駅前   Live camera of Mt,Fuji",
+    "channel": "fuji-net"
+   },
+   {
+    "id": "1cnReFAU04k",
+    "title": "【LIVE】河口湖からの「富士山ライブカメラ」\"mount fuji live camera\" from Lake Kawaguchiko (Yamanashi Japan)",
+    "channel": "【KTV】ケーブルテレビ河口湖"
+   }
+  ],
+  "Mindil Beach": [
+   {
+    "id": "wU131ZlICRA",
+    "title": "Darwin International Airport | Live Flights Arrivals & Departures Information | @LiveAirways_AU",
+    "channel": "Live Airways Australia"
+   },
+   {
+    "id": "MyS45seTwws",
+    "title": "Live limo dash cam - a day in the life of a chauffeur, driving a limousine in Darwin!",
+    "channel": "Around Darwin NT"
+   }
+  ],
+  "Sydney": [
+   {
+    "id": "6FLSjlQhiKo",
+    "title": "Sydney Harbour Live Camera 🇦🇺 | Clean Bridge & Opera House View",
+    "channel": "Sydney Harbour LIVE"
+   },
+   {
+    "id": "jshwkG1ZpP8",
+    "title": "WebcamSydney 2 Live Panning View of Harbour 24/7",
+    "channel": "WebcamSydney"
+   }
+  ],
+  "Surfers Paradise": [
+   {
+    "id": "5azcjrgRNMY",
+    "title": "Gold Coast Airport | Live Flight Arrivals & Departure Informations | @LiveAirways_AU",
+    "channel": "Live Airways Australia"
+   },
+   {
+    "id": "ku-FonFbgLI",
+    "title": "Live webcam of Seatown from the Golden Cap Holiday Park entrance",
+    "channel": "West Dorset Leisure Holidays"
+   }
+  ],
+  "Auckland": [
+   {
+    "id": "nLCMw_Fh0u0",
+    "title": "Auckland Live Camera · Viaduct Harbour & Harbour Bridge, New Zealand · 4K 24/7 🔴",
+    "channel": "Auckland Viaduct View"
+   },
+   {
+    "id": "tSPvkGsRbEM",
+    "title": "Auckland Live Webcam – City Waterfront, Port & Skyline by Village FM",
+    "channel": "VillageFM NZ"
+   },
+   {
+    "id": "Ql7graq0I9M",
+    "title": "SurveillanceMap LIVE · Sky Tower and Auckland Harbour · New Zealand",
+    "channel": "Surveillance Map Foundation"
+   }
+  ],
+  "Waikīkī": [
+   {
+    "id": "cU5qRVlQVOs",
+    "title": "Waikiki Live Cam",
+    "channel": "uberjeph"
+   },
+   {
+    "id": "YN_hKunSIg0",
+    "title": "Waikiki Beach LIVE Cam | Waikiki Beach Marriott Resort & Spa, Hawaii",
+    "channel": "Ozolio Live"
+   },
+   {
+    "id": "kCPppYpcY_s",
+    "title": "Park Shore Waikiki Hotel Live Cam | Waikiki Beach, Honolulu",
+    "channel": "Ozolio Plus"
+   }
+  ],
+  "Kāʻanapali": [
+   {
+    "id": "YXji6UQ0bwY",
+    "title": "Live From Sheraton Maui Resort & Spa | Maui Beach Webcam | Kaanapali Beach Hawaii",
+    "channel": "Ozolio Live"
+   },
+   {
+    "id": "QzQ-7eiMw1w",
+    "title": "🔴 Live Now: 24/7 Hawaii Humpback Whale Marine Sanctuary in Maui, Hawaii in 4K Ultra HD",
+    "channel": "afarTV"
+   }
+  ],
+  "Anchorage": [
+   {
+    "id": "61pi8UjLOlo",
+    "title": "Lake Hood Seaplane Base, Anchorage, Alaska, USA | StreamTime LIVE",
+    "channel": "StreamTime Live"
+   },
+   {
+    "id": "WMSiw_Hyac8",
+    "title": "Anchorage, Alaska, USA | LIVE Train Camera (Fixed View – North)",
+    "channel": "Virtual Railfan"
+   }
+  ],
+  "English Bay": [
+   {
+    "id": "rxyNjFKwzJA",
+    "title": "🔴🚢 Vancouver LIVE Cam | Cruise Ship LiveStream 24/7 | City Views & Canada Place | Alaska Season 2027",
+    "channel": "Vancouver City Views"
+   },
+   {
+    "id": "GHEmhcWjiTE",
+    "title": "Vancouver LIVE 24/7 | Harbour Action, Seaplanes & Skyline Views",
+    "channel": "Vancouver Port Live"
+   },
+   {
+    "id": "DhkGXCgqWjg",
+    "title": "Vancouver Harbour LIVE Cam 🔴 Cruise Ships, Cargo Ships & North Shore Mountains | Port of Vancouver",
+    "channel": "Vancouver City Views"
+   }
+  ],
+  "Seattle": [
+   {
+    "id": "7xmNJ36zR9w",
+    "title": "Poverty Bay  - Puget Sound / Seattle Area Live Cam #livecam",
+    "channel": "Poverty Bay - Puget Sound / Seattle Area Live Cam "
+   }
+  ],
+  "Golden Gate": [
+   {
+    "id": "BSWhGNXxT9A",
+    "title": "🔴 Mersea Restaurant LIVE Bay View · San Francisco Skyline, Golden Gate & Luxury Waterfront 🌉",
+    "channel": "Teleport.camera"
+   },
+   {
+    "id": "46UxBBAzSaY",
+    "title": "🔴 Golden Gate Bridge Live Cam 4K 🌉 San Francisco Sunset & Palace of Fine Arts + 528 Hz Piano",
+    "channel": "Golden Gate Bridge Livestream"
+   }
+  ],
+  "Santa Monica": [
+   {
+    "id": "v97JpT3ZA0w",
+    "title": "LIVE Santa Monica Beach & Pier Cam: California | explore.org",
+    "channel": "Explore Big Surf, Beaches and Sunsets"
+   }
+  ],
+  "La Jolla": [
+   {
+    "id": "Hs1bzxJe-oc",
+    "title": "🔴La Jolla Beach - San Diego, California - Live Cam",
+    "channel": "Earth Watch Live"
+   },
+   {
+    "id": "crL2-5Cw2VI",
+    "title": "La Jolla Beach LIVE Cam | Oceanfront Webcam at Scripps Inn, San Diego, California",
+    "channel": "Ozolio Plus"
+   }
+  ],
+  "Las Vegas": [
+   {
+    "id": "Lwwtbe-5La0",
+    "title": "LIVE: Las Vegas Strip Stream | Real-Time View",
+    "channel": "LV Strip Cam"
+   },
+   {
+    "id": "V7_orOtu-oo",
+    "title": "LAS Vegas Airport LIVE 24/7 with views of 26R & 26L",
+    "channel": "Flightradar24"
+   },
+   {
+    "id": "TKFGGr8UpaU",
+    "title": "Las Vegas: Aerie View Live",
+    "channel": "AE Signage"
+   }
+  ],
+  "Banff": [
+   {
+    "id": "F-QLs9aKPvE",
+    "title": "Live Streaming - Rimrock Banff, EMBLEMS Collection",
+    "channel": "Rimrock Banff"
+   }
+  ],
+  "Denver": [
+   {
+    "id": "E_VpviMTH9k",
+    "title": "Denver City Camera (Sponsored by Boesen Law)",
+    "channel": "Boesen Law"
+   }
+  ],
+  "Puerto Vallarta": [
+   {
+    "id": "xwuuvc86-CI",
+    "title": "Los Muertos Beach – Live Pier Cam – El Dorado Restaurant, Puerto Vallarta, México 🇲🇽",
+    "channel": "El Dorado Restaurant"
+   },
+   {
+    "id": "VH9kDZiUTe8",
+    "title": "Los Muertos Beach Cam – La Palapa Puerto Vallarta, México 🇲🇽",
+    "channel": "La Palapa Restaurant"
+   }
+  ],
+  "Chicago": [
+   {
+    "id": "DcbDohUnv6c",
+    "title": "Chicago & North Western Power House Live Webcam (East) - Chicago, IL  #SteelHighway",
+    "channel": "Steel Highway Railcams"
+   },
+   {
+    "id": "W9ghgZD6Ugw",
+    "title": "EarthCam Live:  Chicago Skydeck Cam (Chicago, IL)",
+    "channel": "EarthCam"
+   },
+   {
+    "id": "-ljizpti4LI",
+    "title": "Chicago LIVE Cam | Trains, Skyline & City Life | Oak Park, Illinois",
+    "channel": "Where The Rails Go"
+   }
+  ],
+  "New Orleans": [
+   {
+    "id": "xqdukYhcGEU",
+    "title": "EarthCam Live: New Orleans Street View",
+    "channel": "EarthCam"
+   },
+   {
+    "id": "QxFFjXu_zqs",
+    "title": "EarthCam Live: New Orleans Balcony View",
+    "channel": "EarthCam"
+   },
+   {
+    "id": "iZRbml7fnXI",
+    "title": "MSY Airport  LIVE 24/7 • New Orleans",
+    "channel": "Flightradar24"
+   }
+  ],
+  "Cancún": [
+   {
+    "id": "fQJRrJkDKo8",
+    "title": "Grand Residences Riviera Cancun Live Webcam",
+    "channel": "Royal Resorts"
+   },
+   {
+    "id": "5D8BK_MLd-I",
+    "title": "The Royal Cancun Live Webcam",
+    "channel": "Royal Resorts"
+   }
+  ],
+  "Mallory Square": [
+   {
+    "id": "GYEdeLtxz6c",
+    "title": "Live Duval Street, Key West, Florida - outside Sloppy Joe's Bar",
+    "channel": "Progressive Integrated Marketing Communications"
+   },
+   {
+    "id": "8Rw-tZTeBjU",
+    "title": "🔴 LIVE Cruise Port Key West",
+    "channel": "BLC Streams"
+   },
+   {
+    "id": "Y5ypYTZs-7o",
+    "title": "Key West Bight Marina Live WebCam - Key West, Florida Keys",
+    "channel": "FloridaKeysTV"
+   }
+  ],
+  "Clearwater Beach": [
+   {
+    "id": "rxBBRLWF0mM",
+    "title": "Frenchy's Clearwater Beach Cam",
+    "channel": "Frenchy's"
+   }
+  ],
+  "Havana": [
+   {
+    "id": "qhXQgd4YKcw",
+    "title": "🔴Little Havana - Miami, Florida - Live Cam",
+    "channel": "Mexico Live"
+   }
+  ],
+  "Times Square": [
+   {
+    "id": "ZxCeWQ3Lcig",
+    "title": "EarthCam Live:  Times Square North 4K",
+    "channel": "EarthCam"
+   },
+   {
+    "id": "VXo0VqVcbK4",
+    "title": "Times Square: 1560 Broadway View Live",
+    "channel": "AE Signage"
+   },
+   {
+    "id": "KHy_n-EMWY8",
+    "title": "EarthCam Live:  Times Square Crossroads (New York City, NY)",
+    "channel": "EarthCam"
+   }
+  ],
+  "Niagara Falls": [
+   {
+    "id": "7gBzLGlJnwk",
+    "title": "Niagara Falls Live",
+    "channel": "Niagara Falls Live"
+   },
+   {
+    "id": "qx7gry390YA",
+    "title": "EarthCam Live:  Niagara Falls",
+    "channel": "EarthCam"
+   },
+   {
+    "id": "PS46DvoJY-c",
+    "title": "🔴 Niagara Falls LIVE Cam",
+    "channel": "The Currie’s"
+   }
+  ],
+  "Panama City": [
+   {
+    "id": "bzfCbXAjk4s",
+    "title": "🔴 Panamá EN VIVO 24/7 · Panama City Live 24/7",
+    "channel": "Panama City Live Cam"
+   },
+   {
+    "id": "EYs8y8gOwf0",
+    "title": "🔴Sharky's Beachfront Restaurant - Panama City Beach,  Florida - Live Cam",
+    "channel": "Florida Live"
+   },
+   {
+    "id": "pzWkmPxhW6I",
+    "title": "LIVE from Schooners in Panama City Beach, FL, USA",
+    "channel": "Beach TV - Panama City Beach"
+   }
+  ],
+  "Eagle Beach": [
+   {
+    "id": "_ZXMjk5K0_s",
+    "title": "🌴 Eagle Beach | Costa Linda Beach Resort | Aruba | LIVE Cam",
+    "channel": "SHOWME Caribbean"
+   },
+   {
+    "id": "i3rdcRdr8Xk",
+    "title": "24/7 LIVE Tropical Paradise | Aruba, Bahamas, Saint Martin, Mexico with Tropical House Vibes",
+    "channel": "Alejandro | The One Planet Nomad"
+   }
+  ],
+  "Buenos Aires": [
+   {
+    "id": "xoyKM6BQceM",
+    "title": "BUENOS AIRES LIVE 24/7 🇦🇷 City Street Cam, Traffic & Weather - Argentina",
+    "channel": "Paseos y Turismo"
+   }
+  ],
+  "Copacabana": [
+   {
+    "id": "wyEi0OPai5g",
+    "title": "Webcam Rio de Janeiro Copacabana Posto 6",
+    "channel": "Homes in Rio"
+   },
+   {
+    "id": "WEl_I5vmuSs",
+    "title": "Rio de Janeiro Cam - Copacabana Posto 3",
+    "channel": "Homes in Rio"
+   },
+   {
+    "id": "Bz9Hkrk1NcY",
+    "title": "Panorama Webcam Rio de Janeiro - Copacabana beach - Posto 6",
+    "channel": "Homes in Rio"
+   }
+  ]
+ }
+}
