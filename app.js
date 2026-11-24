@@ -5,7 +5,7 @@
   const AFTER = 25, BEFORE = 60;   // minutes either side of sunset that count as "happening now"
   const LOAD_TIMEOUT = 15000;       // skip a stream that hasn't started playing by then
 
-  let places = [], cams = {}, queue = [], at = 0, player = null, ready = false, loadTimer = null;
+  let places = [], cams = {}, queue = [], at = 0, player = null, ready = false, loadTimer = null, needsTap = false;
   const broken = new Set();
 
   const fmtClock = (ms, tz) => {
@@ -49,12 +49,28 @@
     if (!queue.length) { $("status").textContent = "no live cameras right now"; return; }
     at = (i + queue.length) % queue.length;
     feed.classList.remove("playing");
+    setTap(false);
     $("status").textContent = "tuning in";
     show();
     if (!ready) return;
     player.loadVideoById(queue[at].cam.id);
     clearTimeout(loadTimer);
-    loadTimer = setTimeout(() => skip(), LOAD_TIMEOUT);
+    loadTimer = setTimeout(stalled, LOAD_TIMEOUT);
+  }
+
+  // Not playing after LOAD_TIMEOUT. A stream that never left "unstarted" or "cued" was
+  // almost always stopped by the browser's autoplay rules, not by YouTube, so ask for a tap.
+  // One stuck buffering is a dead stream: move on.
+  function stalled() {
+    const st = player.getPlayerState?.();
+    if (st === YT.PlayerState.BUFFERING) return skip();
+    setTap(true);
+  }
+
+  function setTap(on) {
+    needsTap = on;
+    feed.classList.toggle("tap", on);
+    if (on) $("status").textContent = "tap to watch";
   }
 
   function skip() {
@@ -83,6 +99,13 @@
   }
 
   $("next").addEventListener("click", nextPlace);
+  feed.addEventListener("click", () => {
+    if (!ready || feed.classList.contains("playing")) return;
+    $("status").textContent = "tuning in";
+    player.playVideo();
+    clearTimeout(loadTimer);
+    loadTimer = setTimeout(stalled, LOAD_TIMEOUT);
+  });
   $("sound").addEventListener("click", () => {
     if (!player) return;
     if (player.isMuted()) { player.unMute(); player.setVolume(70); $("sound").textContent = "sound on"; }
@@ -96,13 +119,28 @@
       events: {
         onReady: () => { ready = true; player.mute(); if (queue.length) play(at); },
         onStateChange: e => {
-          if (e.data === YT.PlayerState.PLAYING) { clearTimeout(loadTimer); feed.classList.add("playing"); $("sound").hidden = false; }
+          if (e.data === YT.PlayerState.PLAYING) { clearTimeout(loadTimer); setTap(false); feed.classList.add("playing"); $("sound").hidden = false; }
           if (e.data === YT.PlayerState.ENDED) skip();
         },
         onError: () => skip(),
       },
     });
   };
+
+  // If YouTube's player script never arrives (usually an ad or tracker blocker), say so
+  // and give a way to watch on YouTube instead.
+  setTimeout(() => {
+    if (window.YT && window.YT.Player) return;
+    const st = $("status");
+    st.textContent = "the video player was blocked, often by an ad blocker. ";
+    const a = document.createElement("a");
+    a.textContent = "open on youtube";
+    a.target = "_blank"; a.rel = "noopener";
+    const id = queue[at]?.cam.id;
+    a.href = id ? `https://www.youtube.com/watch?v=${id}` : "https://www.youtube.com/results?search_query=sunset+live+cam";
+    st.appendChild(a);
+    feed.classList.add("blocked");
+  }, 10000);
 
   Promise.all([fetch("data/places.json").then(r => r.json()), fetch("data/cams.json").then(r => r.json())])
     .then(([p, c]) => {

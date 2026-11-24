@@ -29,6 +29,10 @@ body {
 .stamp { top: 18px; right: 20px; letter-spacing: .08em; font-variant-numeric: tabular-nums; opacity: .8; }
 .status { left: 0; right: 0; top: 50%; margin: 0; text-align: center; letter-spacing: .14em; opacity: .5; transform: translateY(-50%); }
 .feed.playing .status { display: none; }
+.feed.tap { cursor: pointer; }
+.feed.tap .status { opacity: .85; }
+.feed.blocked .status { pointer-events: auto; opacity: .75; padding-inline: 24px; line-height: 1.6; }
+.status a { color: inherit; }
 .sound { bottom: 16px; right: 20px; background: none; border: 0; padding: 4px 0; cursor: pointer; letter-spacing: .1em; opacity: .7; }
 .sound:hover { opacity: 1; }
 @keyframes blink { 50% { opacity: 0; } }
