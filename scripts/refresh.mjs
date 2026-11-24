@@ -23,14 +23,14 @@ try { store = JSON.parse(await readFile(camsPath, "utf8")); } catch {}
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const fold = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-const STOP = new Set(["live", "cam", "webcam", "beach", "sunset", "the", "city", "harbour", "bridge"]);
+const STOP = new Set(["live", "cam", "webcam", "beach", "sunset", "the", "city", "harbour", "bridge", "square", "bay", "falls", "lake", "mount", "marina", "playa", "drive", "marine"]);
 const BAD = /\b(music|lofi|lo-fi|radio|news|asmr|relax(ing)?|sleep|gameplay|game|minecraft|gta|chat|podcast|church|mass|prayer|train ?sim|flight ?sim|replay|highlights?)\b/i;
 
 function matches(place, title) {
   const t = fold(title);
   if (BAD.test(t)) return false;
   if (!/\b(cam|webcam|camera|live ?stream|live)\b/.test(t)) return false;
-  const terms = fold(`${place.name} ${place.region} ${place.query}`).split(/[^a-z0-9]+/).filter(w => w.length >= 4 && !STOP.has(w));
+  const terms = fold(`${place.name} ${place.query}`).split(/[^a-z0-9]+/).filter(w => w.length >= 4 && !STOP.has(w));
   return terms.some(w => t.includes(w));
 }
 
@@ -103,7 +103,8 @@ const alive = known.length ? await (KEY ? checkApi(known) : checkPage(known)) : 
 let dropped = 0;
 for (const name of Object.keys(store.cams)) {
   const before = store.cams[name].length;
-  store.cams[name] = store.cams[name].filter(c => alive.has(c.id));
+  const place = places.find(p => p.name === name);
+  store.cams[name] = store.cams[name].filter(c => alive.has(c.id) && place && matches(place, c.title));
   dropped += before - store.cams[name].length;
   if (!store.cams[name].length) delete store.cams[name];
 }
