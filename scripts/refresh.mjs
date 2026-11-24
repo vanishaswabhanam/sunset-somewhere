@@ -21,6 +21,7 @@ const camsPath = new URL("../data/cams.json", import.meta.url);
 let store = { updated: null, cams: {} };
 try { store = JSON.parse(await readFile(camsPath, "utf8")); } catch {}
 
+const sleep = ms => new Promise(r => setTimeout(r, ms));
 const fold = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 const STOP = new Set(["live", "cam", "webcam", "beach", "sunset", "the", "city", "harbour", "bridge"]);
 const BAD = /\b(music|lofi|lo-fi|radio|news|asmr|relax(ing)?|sleep|gameplay|game|minecraft|gta|chat|podcast|church|mass|prayer|train ?sim|flight ?sim|replay|highlights?)\b/i;
@@ -50,7 +51,11 @@ async function searchApi(q) {
 
 async function searchPage(q) {
   const u = `https://www.youtube.com/results?search_query=${encodeURIComponent(q)}&sp=EgJAAQ%253D%253D&hl=en&gl=US`;
-  const html = await (await fetch(u, { headers: { "user-agent": UA, "accept-language": "en-US,en;q=0.9", cookie: "CONSENT=YES+1" } })).text();
+  let html = "";
+  for (let attempt = 0; attempt < 3 && !html; attempt++) {
+    try { html = await (await fetch(u, { headers: { "user-agent": UA, "accept-language": "en-US,en;q=0.9", cookie: "CONSENT=YES+1" } })).text(); }
+    catch (e) { if (attempt === 2) throw e; await sleep(5000 * (attempt + 1)); }
+  }
   const m = html.match(/var ytInitialData = (\{.*?\});<\/script>/s);
   if (!m) return [];
   const found = [];
@@ -93,7 +98,6 @@ async function checkPage(ids) {
 }
 
 // ---------- run
-const sleep = ms => new Promise(r => setTimeout(r, ms));
 const known = Object.values(store.cams).flat().map(c => c.id);
 const alive = known.length ? await (KEY ? checkApi(known) : checkPage(known)) : new Set();
 let dropped = 0;
@@ -121,7 +125,7 @@ if (DISCOVER) {
       list.push(r); used.add(r.id); added++;
     }
     if (list.length) store.cams[p.name] = list;
-    if (!KEY) await sleep(1200);
+    if (!KEY) await sleep(3000);
   }
 }
 

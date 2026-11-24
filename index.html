@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sunset Somewhere</title>
+<meta name="description" content="A live camera pointed at wherever the sun is setting right now.">
+<meta name="theme-color" content="#f4f3ef">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=IBM+Plex+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <div class="feed" id="feed">
+    <div class="player"><div id="player"></div></div>
+    <span class="rec"><i></i>REC</span>
+    <span class="stamp" id="stamp">--:--:--</span>
+    <button class="sound" id="sound" type="button" hidden>sound off</button>
+    <p class="status" id="status">finding the sunset</p>
+  </div>
+  <div class="meta">
+    <p class="loc" id="loc">&nbsp;</p>
+    <span class="mono" id="coord"></span>
+  </div>
+  <div class="meta">
+    <span class="mono" id="when"></span>
+    <button class="next" id="next" type="button" hidden>another sunset &rarr;</button>
+  </div>
+</main>
+<a class="src mono" href="https://github.com/vanishaswabhanam/sunset-somewhere">source</a>
+<script src="sun.js"></script>
+<script src="app.js"></script>
+<script src="https://www.youtube.com/iframe_api" async></script>
+</body>
+</html>
