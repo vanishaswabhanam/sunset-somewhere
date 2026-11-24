@@ -4,8 +4,9 @@
   const feed = $("feed");
   const AFTER = 25, BEFORE = 60;   // minutes either side of sunset that count as "happening now"
   const LOAD_TIMEOUT = 15000;       // skip a stream that hasn't started playing by then
+  const REVEAL_DELAY = 5000;        // YouTube's start-up title bar is gone by then
 
-  let places = [], cams = {}, queue = [], at = 0, player = null, ready = false, loadTimer = null, needsTap = false;
+  let places = [], cams = {}, queue = [], at = 0, player = null, ready = false, loadTimer = null, revealTimer = null, needsTap = false;
   const broken = new Set();
 
   const fmtClock = (ms, tz) => {
@@ -119,10 +120,18 @@
       events: {
         onReady: () => { ready = true; player.mute(); if (queue.length) play(at); },
         onStateChange: e => {
+          // YouTube draws its title bar and play icon for a few seconds after playback starts,
+          // and its spinner or title whenever it pauses or buffers. Show the picture only once
+          // playback has been steady for REVEAL_DELAY, and go back to black whenever it isn't.
+          clearTimeout(revealTimer);
           if (e.data === YT.PlayerState.PLAYING) {
             clearTimeout(loadTimer); setTap(false);
-            // wait out YouTube's play-icon flash before fading the picture in
-            setTimeout(() => { if (player.getPlayerState() === YT.PlayerState.PLAYING) { feed.classList.add("playing"); $("sound").hidden = false; } }, 3000);
+            revealTimer = setTimeout(() => {
+              if (player.getPlayerState() === YT.PlayerState.PLAYING) { feed.classList.add("playing"); $("sound").hidden = false; }
+            }, REVEAL_DELAY);
+          } else {
+            feed.classList.remove("playing");
+            if (e.data === YT.PlayerState.BUFFERING || e.data === YT.PlayerState.PAUSED) $("status").textContent = "tuning in";
           }
           if (e.data === YT.PlayerState.ENDED) skip();
         },
